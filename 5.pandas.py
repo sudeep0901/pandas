@@ -36,8 +36,7 @@ inxArr = ['name','last']
 print(ds[inxArr])
 
 ser = pd.Series([1, 2, 3, 4])
+fruits = ['lemon', 'pear', 'watermelon', 'tomato']
 
-
-
-
+print(*range(1,10))
 

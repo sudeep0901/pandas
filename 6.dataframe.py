@@ -26,4 +26,22 @@ print(df.index)
 
 # setting up column as index
 df  = df.set_index(['name'])
-print(df.ix['sudeep'])
+# print(df.ix['AA'])
+
+df
+
+df.ix['AA']
+
+df.ix[1]
+df
+
+for i in range(0, 3):
+    print(df.iloc[i])
+
+[print(df.iloc[i][0]) for i in range(0, 3)]
+
+
+
+[df.iloc[i] for i in range(0, 3)]
+val = df.iloc[i]
+val['date']
