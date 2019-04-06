@@ -23,7 +23,27 @@ cf.groupby(['year']).size().plot()
 c.groupby(['year', 'name']).n.max().plot()
 c.groupby(['year']).n.mean().head()
 
+# 2.3.2 Groupby with custom field
 decade = c['year']//10*10
 decade
 c_dec = c.groupby(decade).n.size()
 c_dec.plot()
+
+
+
+c_decade = c.groupby( ['type', c['year']//10*10] ).size()
+c_decade.unstack()
+
+c_decade.unstack().plot()
+plt.show()
+
+c_decade.unstack().plot(kind='bar')
+plt.show()
+
+# to plot side by side
+
+c_decade.unstack(0)
+
+c_decade.unstack(0).plot(kind='bar')
+plt.show()
+
