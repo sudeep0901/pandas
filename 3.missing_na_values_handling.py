@@ -11,7 +11,7 @@ print(df)
 
 df2 = df.reindex(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'])
 print(df2)
-
+    
 navalues = pd.isna(df2)
 print(navalues)
 print(pd.isna(df2['one']))
