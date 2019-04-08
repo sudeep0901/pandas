@@ -17,7 +17,9 @@ plt.show()
 t.columns
 
 p = t['title'].value_counts()
+p
 p.sort_index().plot()
 p.plot()
 plt.show()
+
 

@@ -20,6 +20,8 @@ c.groupby(['year', 'name']).size()
 cf = c[c['name'] == 'Aaron Abrams']
 cf.groupby(['year']).size().plot()
 
+print("Size of data aftger group by:--------------")
+print(cf.groupby(['year']).size())
 c.groupby(['year', 'name']).n.max().plot()
 c.groupby(['year']).n.mean().head()
 
@@ -47,3 +49,12 @@ c_decade.unstack(0)
 c_decade.unstack(0).plot(kind='bar')
 plt.show()
 
+
+print("Size:", titles.size)
+print("shape:", titles.shape)
+print("ndim:", titles.ndim)
+
+stk = casts.stack()
+stk.unstack()
+
+    
