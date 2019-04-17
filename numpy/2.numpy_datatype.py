@@ -19,3 +19,5 @@ defaultArray.astype('int32').dtype
 bool_Array = np.array([True, False, True])
 bool_Array.astype('int')
 
+
+
