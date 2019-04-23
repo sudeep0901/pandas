@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 
 
-array = np.array((np.random.rand(10) * 10).astype(int))
+array = np.array((np.random.rand(10) * 100).astype(int))
 array
 
 # reverse an array  double colon 
@@ -19,10 +19,10 @@ a = np.reshape(np.arange(9),(3,3))
 a
 a[0,3:]
 
- x = np.array([
+x = np.array([
      [[1],[2],[3]],
      [[4],[5],[6]]
-])
+    ])
 x
 x.ndim
 
@@ -32,7 +32,10 @@ x[0,...]
 x[1,...]
 x[-1,...]
 
-x[:,np.newaxis,:,:].shape
+x
+x[:,np.newaxis,:,:]
+
+
 
 x[:,0: 4]
 
