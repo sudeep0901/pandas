@@ -19,3 +19,5 @@ ar2
 
 ar[:10] = ar2
 ar
+
+np.may_share_memory(ar, ar2)

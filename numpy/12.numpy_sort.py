@@ -21,7 +21,7 @@ ar=np.array([[3,2],
 ar[0]
 ar[1]
 
-ar.sort(axis=0)
+ar.sort(axis=1)
 ar
 ar=np.array([[3,2],
             [-1,10]])

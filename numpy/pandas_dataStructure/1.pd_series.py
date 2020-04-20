@@ -3,13 +3,14 @@ import numpy as np
 # ser = pd.Series(data, index=idx)
 # keys becomes index
 np.random.seed(0)
-ser = pd.Series(np.random.rand(1)); ser
+ser = pd.Series(np.random.rand(5)); ser
 
 import calendar as cal
-print(cal.month_abbr[12])
-monthnames
-
-months = pd.Series(np.arange(1, 13), index=monthnames)
+print(cal.month_abbr)
+# monthnames
+monthnames = cal.month_abbr
+print(monthnames)
+months = pd.Series(np.arange(1, 14), index=monthnames)
 months
 months.index
 months['January']
